@@ -83,10 +83,14 @@ export const BentoGridItem = ({
       style={{
         //   add these two
         //   you can generate the color from here https://cssgradient.io/
-        background: "rgb(4,7,29)",
+        background: "rgb(0,0,0)",
         backgroundColor:
-          "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+          "linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 91.1%)",
       }}
+      
+      
+      
+     
     >
       {/* add img divs */}
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
@@ -142,26 +146,26 @@ export const BentoGridItem = ({
 
           {/* Tech stack list div */}
           {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2 lg:top-2">
               {/* tech stack lists */}
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
+              <div className="flex flex-col gap-3">
                 {leftLists.map((item, i) => (
                   <span
                     key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
+                    className="py-2 px-3 text-xs lg:text-base opacity-50 
                     lg:opacity-100 rounded-lg text-center bg-[#10132E]"
                   >
                     {item}
                   </span>
                 ))}
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
+                <span className=" py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
               </div>
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
+              <div className="flex flex-col gap-3">
                 <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
                 {rightLists.map((item, i) => (
                   <span
                     key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
+                    className="py-2 px-3 text-xs lg:text-base opacity-50 
                     lg:opacity-100 rounded-lg text-center bg-[#10132E]"
                   >
                     {item}

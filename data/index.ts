@@ -173,31 +173,19 @@ export const navItems = [
   export const workExperience = [
     {
       id: 1,
-      title: "Frontend Engineer Intern",
-      desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+      title: "Jaypee Institute of Information Technology,Noida",
+      desc: "B.Tech Computer Science",
+      timeframe:"September 2022 - April 2026 (Currently in 5th semester)",
       className: "md:col-span-2",
       thumbnail: "/exp1.svg",
     },
     {
       id: 2,
-      title: "Mobile App Dev - JSM Tech",
-      desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+      title: "Renaissance School, Bulandshahr",
+      desc: "Secondary Education",
+      timeframe:"April 2007 - April 2021",
       className: "md:col-span-2", // change to md:col-span-2
       thumbnail: "/exp2.svg",
-    },
-    {
-      id: 3,
-      title: "Freelance App Dev Project",
-      desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-      className: "md:col-span-2", // change to md:col-span-2
-      thumbnail: "/exp3.svg",
-    },
-    {
-      id: 4,
-      title: "Lead Frontend Developer",
-      desc: "Developed and maintained user-facing features using modern frontend technologies.",
-      className: "md:col-span-2",
-      thumbnail: "/exp4.svg",
     },
   ];
   
@@ -205,13 +193,31 @@ export const navItems = [
     {
       id: 1,
       img: "/git.svg",
+      src: "https://github.com/aryanraj13",
     },
     {
       id: 2,
       img: "/twit.svg",
+      src: "https://x.com/Aryan02009993",
     },
     {
       id: 3,
       img: "/link.svg",
+      src: "https://www.linkedin.com/in/aryan-rajput-18895b289",
+    },
+    {
+      id: 4,
+      img: "/reddit.svg",
+      src: "https://www.reddit.com/user/aryanraj13/",
+    },
+    {
+      id: 5,
+      img: "/google.svg",
+      src: "mailto:aryanraj409.1.2@gmail.com",
+    },
+    {
+      id: 6,
+      img: "/insta.svg",
+      src: "https://instagram.com/_aryan.raj13",
     },
   ];

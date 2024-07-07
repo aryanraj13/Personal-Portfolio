@@ -4,14 +4,14 @@ import { TextGenerateEffect } from "@/components/ui/TextGenerateEffect";
 import MagicButton from "@/components/ui/MagicButton";
 import { FlipWords } from "@/components/ui/Flip-Words";
 import { socialMedia } from "@/data";
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 
-const Hero = () => {
+const page = () => {
 
   return (
-    <div className="min-h-screen">
-    <div className="text-center md:tracking-wider text-sm md:text-lg lg:text-2xl pt-32">
+    <>
+    <div className="text-center md:tracking-wider text-sm md:text-lg lg:text-2xl mt-32">
             Hi! I&apos;m <FlipWords className="text-9xl italic" duration={1200} words={["Aryan","आरयन"]} /> <br/><span className="text-sm "> a Next.js Developer based in India.</span>
           </div>
       <div className="flex justify-around mt-20">
@@ -35,7 +35,7 @@ const Hero = () => {
           </p>
         </div>
       </div>
-
+      
       <div className='pt-9 justify-center flex items-center md:gap-3 gap-6'>
                 {socialMedia.map((profile)=>(
                     <div key={profile.id} className='w-10 h-10 flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-100 rounded-lg border border-black-300 z-10'>
@@ -47,7 +47,7 @@ const Hero = () => {
                 ))}
             </div>
 
-      <div className="text-center">
+      <div className="text-center z-10">
       <a href="#about">
             <MagicButton
               title="See my work"
@@ -58,8 +58,8 @@ const Hero = () => {
       </div>
 
       <BackgroundBeams />
-    </div>
+    </>
   );
 };
 
-export default Hero;
+export default page;
