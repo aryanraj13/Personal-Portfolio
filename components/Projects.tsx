@@ -5,10 +5,29 @@ import React from "react";
 import { companies, testimonials } from "@/data";
 import { InfiniteMovingCards } from "./ui/InfiniteCards";
 import { HeroParallax } from "./ui/Hero-parallax";
+import { LinkPreview } from "./ui/LinkPreview";
+import { Vortex } from "./ui/Vortex";
 
 const Projects = () => {
   return (
     <section>
+      <Vortex
+        backgroundColor="black"
+        className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full"
+      >
+      <div className="text-center">
+        <div className="mb-6 text-2xl font-semibold">
+          Want to know more about my Projects?
+          </div>
+          <LinkPreview url="https://github.com/aryanraj13" className="font-bold">
+        
+      <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 hover:text-slate-400">
+          Visit My Github Profile
+        </button>
+        
+        </LinkPreview>
+        </div>
+        </Vortex>
       <HeroParallax products={products} />
     </section>
   )
@@ -18,60 +37,60 @@ export default Projects;
 
 export const products = [
   {
-    title: "Moonbeam",
-    link: "https://gomoonbeam.com",
+    title: "Boxzone",
+    link: "https://boxzone.netlify.app/",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
+      "/pr1.png",
   },
   {
-    title: "Cursor",
-    link: "https://cursor.so",
+    title: "LikeLoop",
+    link: "https://likeloop.netlify.app/",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cursor.png",
+      "/pr2.png",
   },
   {
-    title: "Rogue",
-    link: "https://userogue.com",
+    title: "CyberScoop",
+    link: "https://cyber-scoop-blog.vercel.app/",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/rogue.png",
-  },
-
-  {
-    title: "Editorially",
-    link: "https://editorially.org",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editorially.png",
-  },
-  {
-    title: "Editrix AI",
-    link: "https://editrix.ai",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editrix.png",
-  },
-  {
-    title: "Pixel Perfect",
-    link: "https://app.pixelperfect.quest",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
+      "/pr3.png",
   },
 
   {
-    title: "Algochurn",
-    link: "https://algochurn.com",
+    title: "NewsFlow",
+    link: "https://github.com/aryanraj13/NewsFlow",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
+      "/pr4.png",
   },
   {
-    title: "Aceternity UI",
-    link: "https://ui.aceternity.com",
+    title: "eNotes",
+    link: "https://enotes-cloud.netlify.app/login",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
+      "/pr5.png",
   },
   {
-    title: "Tailwind Master Kit",
-    link: "https://tailwindmasterkit.com",
+    title: "NewsFlow",
+    link: "https://github.com/aryanraj13/NewsFlow",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
+      "/pr4.png",
+  },
+
+  {
+    title: "eNotes",
+    link: "https://enotes-cloud.netlify.app/login",
+    thumbnail:
+      "/pr5.png",
+  },
+  {
+    title: "GlobeGlider",
+    link: "https://github.com/aryanraj13/Travel-and-Tourism-Website",
+    thumbnail:
+      "/pr6.png",
+  },
+  {
+    title: "NewsFlow",
+    link: "https://github.com/aryanraj13/NewsFlow",
+    thumbnail:
+      "/pr4.png",
   },
   {
     title: "SmartBridge",
@@ -80,29 +99,29 @@ export const products = [
       "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
   },
   {
-    title: "Renderwork Studio",
-    link: "https://renderwork.studio",
+    title: "Dropout Visualize",
+    link: "https://github.com/aryanraj13/SIH-2023",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
+      "/pr8.png",
   },
 
   {
-    title: "Creme Digital",
-    link: "https://cremedigital.com",
+    title: "ScoreStream Pro",
+    link: "https://github.com/aryanraj13/Cricket-Updates-Chrome-Extension",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
+      "/pr7.png",
   },
   {
-    title: "Golden Bells Academy",
-    link: "https://goldenbellsacademy.com",
+    title: "Boxzone",
+    link: "https://boxzone.netlify.app/",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
+      "/pr9.png",
   },
   {
-    title: "Invoker Labs",
-    link: "https://invoker.lol",
+    title: "Dropout Visualize",
+    link: "https://github.com/aryanraj13/SIH-2023",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/invoker.png",
+      "/pr8.png",
   },
   {
     title: "E Free Invoice",

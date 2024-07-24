@@ -158,7 +158,7 @@ export const HeroParallax = ({
   return (
     <div
       ref={ref}
-      className=" py-32 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className=" pt-32 pb-10 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       
       
@@ -220,6 +220,7 @@ export const ProductCard = ({
       <Link
         href={product.link}
         className="block group-hover/product:shadow-2xl "
+        target="_blank"
       >
         <Image
           src={product.thumbnail}

@@ -108,6 +108,14 @@ const config = {
             backgroundPosition: "-200% 0",
           },
         },
+        meteor: {
+          "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
+          "70%": { opacity: "1" },
+          "100%": {
+            transform: "rotate(215deg) translateX(-500px)",
+            opacity: "0",
+          },
+        },
         moveHorizontal: {
           "0%": {
             transform: "translateX(-50%) translateY(-10%)",
@@ -152,6 +160,7 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
         spotlight: "spotlight 2s ease .75s 1 forwards",
         shimmer: "shimmer 2s linear infinite",
+        "meteor-effect": "meteor 5s linear infinite",
         first: "moveVertical 30s ease infinite",
         second: "moveInCircle 20s reverse infinite",
         third: "moveInCircle 40s linear infinite",
@@ -163,11 +172,23 @@ const config = {
     },
   },
   plugins: [
+    require("@designbycode/tailwindcss-text-shadow")
+    ({
+      shadowColor: "rgba(0, 0, 0, 0.55)",
+      shadowBlur: "2px",
+      shadowOffsetX: "1px",
+      shadowOffsetY: "1px",
+  }),
     require("tailwindcss-animate"),
     addVariablesForColors,
     function ({ matchUtilities, theme }: any) {
       matchUtilities(
         {
+          "bg-dot-thick": (value: any) => ({
+            backgroundImage: `url("${svgToDataUri(
+              `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="none"><circle fill="${value}" id="pattern-circle" cx="10" cy="10" r="2.5"></circle></svg>`
+            )}")`,
+          }),
           "bg-grid": (value: any) => ({
             backgroundImage: `url("${svgToDataUri(
               `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="100" height="100" fill="none" stroke="${value}"><path d="M0 .5H31.5V32"/></svg>`

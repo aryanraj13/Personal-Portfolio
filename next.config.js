@@ -1,7 +1,5 @@
 module.exports = {
-    images: {
-      domains: ['aceternity.com','images.unsplash.com'],
-    },
-  };
-
-
+  images: {
+    domains: ['aceternity.com', 'images.unsplash.com', 'api.microlink.io'],
+  },
+};

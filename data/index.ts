@@ -1,8 +1,9 @@
 export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
-    { name: "Testimonials", link: "#testimonials" },
+    { name: "Education", link: "#education" },
     { name: "Contact", link: "#contact" },
+    { name: "Life & Stories", link: "/gallery"},
   ];
   
   export const gridItems = [
@@ -38,23 +39,23 @@ export const navItems = [
     },
     {
       id: 4,
-      title: "Tech enthusiast with a passion for development.",
+      title: "",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-1",
       imgClassName: "",
-      titleClassName: "justify-start",
-      img: "/grid.svg",
-      spareImg: "/b4.svg",
+      titleClassName: "",
+      img: "",
+      spareImg: "",
     },
   
     {
       id: 5,
-      title: "Currently building a JS Animation library",
-      description: "The Inside Scoop",
+      title: "Currently learning Blockchain",
+      description: "Current status : ",
       className: "md:col-span-3 md:row-span-2",
-      imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
+      imgClassName: "absolute md:w-full h-full w-60",
       titleClassName: "justify-center md:justify-start lg:justify-center",
-      img: "/b5.svg",
+      img: "/blockchain.jpeg",
       spareImg: "/grid.svg",
     },
     {
@@ -72,35 +73,35 @@ export const navItems = [
   export const projects = [
     {
       id: 1,
-      title: "3D Solar System Planets to Explore",
-      des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-      img: "/p1.svg",
+      title: "BoxZone - Ecommerce",
+      des: "BoxZone is an innovative e-commerce application built with cutting-edge technologies. It handles data with high scalability & performance.",
+      img: "/pr1.png",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-      link: "https://github.com/adrianhajdin?tab=repositories",
+      link: "https://twitter.com/mannupaaji",
     },
     {
       id: 2,
-      title: "Yoom - Video Conferencing App",
-      des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-      img: "/p2.svg",
+      title: "LikeLoop - Social Media Application",
+      des: "LikeLoop is a dynamic social media application that brings people together, allowing users to share updates, connect with friends.",
+      img: "/like.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/zoom-clone",
+      link: "https://likeloop.netlify.app/",
     },
     {
       id: 3,
-      title: "AI Image SaaS - Canva Application",
-      des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-      img: "/p3.svg",
+      title: "eNotes - Digital Notebook",
+      des: "Your versatile digital companion for notes, ideas, and reminders made using MERN stack. Seamlessly jot down thoughts, organize tasks, and capture inspiration wherever you go.",
+      img: "/enotes.png",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/ai_saas_app",
+      link: "https://enotes-cloud.netlify.app/",
     },
     {
       id: 4,
-      title: "Animated Apple Iphone 3D Website",
-      des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-      img: "/p4.svg",
+      title: "Globe Glider - Travel & Tourism Website",
+      des: "Welcome to Globe Glider, your ultimate destination for seamless travel experiences. Immerse yourself in the beauty of diverse cultures, breathtaking landscapes, and unforgettable adventures.",
+      img: "/package1.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-      link: "https://github.com/adrianhajdin/iphone",
+      link: "https://github.com/aryanraj13/Travel-and-Tourism-Website",
     },
   ];
   
@@ -173,7 +174,7 @@ export const navItems = [
   export const workExperience = [
     {
       id: 1,
-      title: "Jaypee Institute of Information Technology,Noida",
+      title: "Jaypee Institute of Information Technology, Noida",
       desc: "B.Tech Computer Science",
       timeframe:"September 2022 - April 2026 (Currently in 5th semester)",
       className: "md:col-span-2",
@@ -221,3 +222,47 @@ export const navItems = [
       src: "https://instagram.com/_aryan.raj13",
     },
   ];
+
+
+  export const techstacklogos = [
+    {
+      src:"/python.png",
+    },
+    {
+      src:"/js.png",
+    },
+    {
+      src:"/react.png",
+    },
+    {
+      src:"/git.svg",
+    },
+    {
+      src:"/database.png",
+    },
+    {
+      src:"/css.png",
+    },
+    {
+      src:"/ts.svg",
+    },
+    {
+      src:"/react.png",
+    },
+    {
+      src:"/html.png",
+    },
+    {
+      src:"/three.svg",
+    },
+    {
+      src:"/tail.svg",
+    },
+    {
+      src:"/next.svg",
+    },
+    {
+      src:"/npm.png",
+    },
+  ];
+  

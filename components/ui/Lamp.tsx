@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/utils/cn";
+import { caveat, gilroy, gloock, instrument_sans, nyght, spectral } from "@/utils/fonts";
 
 export function LampDemo() {
   return (
@@ -11,12 +12,12 @@ export function LampDemo() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
           delay: 0.3,
-          duration: 0.8,
+          duration: 0.6,
           ease: "easeInOut",
         }}
         className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-0 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
       >
-        About Me
+        <span className={`${gilroy}`}>About</span><span className={`${gilroy}`}> Me</span>
       </motion.h1>
     </LampContainer>
   );

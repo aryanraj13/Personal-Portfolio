@@ -12,6 +12,7 @@ import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
+import { TextRevealCard } from "./TextRevealCard";
 
 export const BentoGrid = ({
   className,
@@ -53,8 +54,8 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
+  const leftLists = ["MERN", "Express", "ReactJS"];
+  const rightLists = ["AWS", "NextJS", "Django"];
 
   const [copied, setCopied] = useState(false);
 
@@ -68,7 +69,7 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    const text = "hsu@jsmastery.pro";
+    const text = "aryanraj409.1.2@gmail.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
@@ -144,6 +145,15 @@ export const BentoGridItem = ({
           {/* for the github 3d globe */}
           {id === 2 && <GridGlobe />}
 
+          {id === 4 && (
+          <div className="w-fit h-fit">
+          <TextRevealCard
+      text="Engineer turned"
+      revealText="Developer"
+    ></TextRevealCard>
+    </div>
+    )}
+
           {/* Tech stack list div */}
           {id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2 lg:top-2">
@@ -153,20 +163,20 @@ export const BentoGridItem = ({
                   <span
                     key={i}
                     className="py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    lg:opacity-100 rounded-lg text-center bg-[#03082d] hover:bg-[#5b24ad]"
                   >
                     {item}
                   </span>
                 ))}
-                <span className=" py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
+                <span className=" py-4 px-3  rounded-lg text-center bg-[#03082d]"></span>
               </div>
               <div className="flex flex-col gap-3">
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
+                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#03082d]"></span>
                 {rightLists.map((item, i) => (
                   <span
                     key={i}
                     className="py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    lg:opacity-100 rounded-lg text-center bg-[#03082d] hover:bg-[#5b24ad]"
                   >
                     {item}
                   </span>

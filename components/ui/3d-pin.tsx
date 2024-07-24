@@ -31,11 +31,10 @@ export const PinContainer = ({
   return (
     <div
       className={cn(
-        "relative group/pin z-50  cursor-pointer",
+        "relative group/pin z-40  cursor-pointer",
         containerClassName
       )}
-      onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave}
+      
     >
       <div
         style={{
@@ -49,12 +48,12 @@ export const PinContainer = ({
             transform: transform,
           }}
           // remove  bg-black
-          className="absolute left-1/2 p-4 top-1/2  flex justify-start items-start  rounded-2xl  shadow-[0_8px_16px_rgb(0_0_0/0.4)] border border-white/[0.1] group-hover/pin:border-white/[0.2] transition duration-700 overflow-hidden"
+          className="absolute left-1/2 p-4 top-1/2  flex justify-start items-start  rounded-2xl  shadow-[0_8px_16px_rgb(0_0_0/0.4)] border border-white/[0.1] group-hover/pin:border-white/[0.7] transition duration-700 overflow-hidden"
         >
           <div className={cn(" relative z-50 ", className)}>{children}</div>
         </div>
       </div>
-      <PinPerspective title={title} href={href} />
+      
     </div>
   );
 };
@@ -68,7 +67,7 @@ export const PinPerspective = ({
 }) => {
   return (
     // change w-96 to w-full
-    <motion.div className="pointer-events-none w-full h-80 flex items-center justify-center opacity-0 group-hover/pin:opacity-100 z-[60] transition duration-500">
+    <motion.div className="pointer-events-none w-full h-80 flex items-center justify-center opacity-0 group-hover/pin:opacity-100 z-[80] transition duration-500">
       <div className=" w-full h-full -mt-7 flex-none  inset-0">
         <div className="absolute top-0 inset-x-0  flex justify-center">
           <a

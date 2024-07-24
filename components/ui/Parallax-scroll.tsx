@@ -29,11 +29,21 @@ export const ParallaxScroll = ({
   const thirdPart = images.slice(2 * third);
 
   return (
+    <>
+    
+    
     
     <div
-      className={cn("h-[45rem] items-start overflow-y-auto w-full", className)}
+      className={cn("h-[45rem] items-start overflow-y-auto w-screen", className)}
       ref={gridRef}
     >
+      <div className="z-20 -mb-32 mt-6">
+        <h1 className='heading'>
+          Life Through My 
+        <span className='text-purple'> Eyes
+        </span>
+        </h1>
+      </div>
       <div
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start  max-w-6xl mx-auto gap-10 py-40 px-10"
         ref={gridRef}
@@ -82,5 +92,6 @@ export const ParallaxScroll = ({
         </div>
       </div>
     </div>
+    </>
   );
 };
