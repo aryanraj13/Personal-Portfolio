@@ -1,19 +1,17 @@
-import { HeroHighlight } from "@/components/ui/Herohighlight";
-import { LampDemo } from "@/components/ui/Lamp";
-import { TextRevealCard, TextRevealCardDescription, TextRevealCardTitle } from "@/components/ui/TextRevealCard";
-import { caveat, gloock, nyght } from "@/utils/fonts";
+import { Cinema } from "@/components/ui/Cinemacards";
+import { cinemaposters } from "@/data";
 
 const page = () => {
-
   return (
-    <div>
-      <HeroHighlight>
-        sjdf
-      </HeroHighlight>
+    <div className=" flex flex-col antialiased items-center justify-center relative overflow-hidden">
+      <Cinema
+        items={cinemaposters}
+        direction="right"
+        speed="slow"
+      />
     </div>
-  )
+  );
 };
 
 export default page;
-
 

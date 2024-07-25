@@ -13,6 +13,8 @@ import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
 import { TextRevealCard } from "./TextRevealCard";
+import Link from "next/link";
+import { gilroy, gloock, nyght } from "@/utils/fonts";
 
 export const BentoGrid = ({
   className,
@@ -141,6 +143,19 @@ export const BentoGridItem = ({
           >
             {title}
           </div>
+
+          {id === 1 && 
+          <div className="group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10 justify-end">
+          
+          
+          <div className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10 ${nyght} text-shadow text-shadow-orange-500 text-shadow-x-1 text-shadow-y-1 text-shadow-blur-9`}>
+          <Link href="http://localhost:3000/gallery">Life & Stories</Link>
+          </div>
+          <div className={`font-sans lg:text-base text-lg z-10 ${gilroy} text-slate-300`}>
+          Hi, I&apos;m Aryan 👋 A passionate Full Stack Software Developer 🚀
+          </div>
+          </div>
+          }
 
           {/* for the github 3d globe */}
           {id === 2 && <GridGlobe />}

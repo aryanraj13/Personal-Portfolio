@@ -29,23 +29,12 @@ export const ParallaxScroll = ({
   const thirdPart = images.slice(2 * third);
 
   return (
-    <>
-    
-    
-    
     <div
-      className={cn("h-[45rem] items-start overflow-y-auto w-screen", className)}
+      className={cn("h-[40rem] items-start overflow-y-auto w-full", className)}
       ref={gridRef}
     >
-      <div className="z-20 -mb-32 mt-6">
-        <h1 className='heading'>
-          Life Through My 
-        <span className='text-purple'> Eyes
-        </span>
-        </h1>
-      </div>
       <div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start  max-w-6xl mx-auto gap-10 py-40 px-10"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start  max-w-5xl mx-auto gap-10 px-10"
         ref={gridRef}
       >
         <div className="grid gap-10">
@@ -56,7 +45,7 @@ export const ParallaxScroll = ({
             >
               <Image
                 src={el}
-                className=" object-cover object-left-top rounded-lg gap-10 !m-0 !p-0"
+                className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0"
                 height="400"
                 width="400"
                 alt="thumbnail"
@@ -69,7 +58,7 @@ export const ParallaxScroll = ({
             <motion.div style={{ y: translateSecond }} key={"grid-2" + idx}>
               <Image
                 src={el}
-                className="object-cover object-left-top rounded-lg gap-10 !m-0 !p-0"
+                className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0"
                 height="400"
                 width="400"
                 alt="thumbnail"
@@ -82,7 +71,7 @@ export const ParallaxScroll = ({
             <motion.div style={{ y: translateThird }} key={"grid-3" + idx}>
               <Image
                 src={el}
-                className="object-cover object-left-top rounded-lg gap-10 !m-0 !p-0"
+                className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0"
                 height="400"
                 width="400"
                 alt="thumbnail"
@@ -92,6 +81,5 @@ export const ParallaxScroll = ({
         </div>
       </div>
     </div>
-    </>
   );
 };
